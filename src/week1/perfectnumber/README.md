@@ -1,0 +1,3 @@
+# Perfect Numbers
+* A perfect number is a number such that the sum of all its positive integer factors, excluding the number itself, is equal to the number itself.
+* For example 6, 28, 496, 8128 ... 

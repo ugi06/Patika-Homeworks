@@ -7,6 +7,6 @@ public class DoWhile {
         do{
             //kod satırı
             // isTrue = false; , break;, bunlarla döndügende çıkarsın ama bir kere daha çalışır.
-        }while(isTrue);
+        }while(isTrue); // ; ile biter
     }
 }
