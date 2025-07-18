@@ -6,8 +6,8 @@ public class PerfectNumber {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Bir sayı deneyiniz : ");   // Konsoldan veri almak için
+        Scanner scan = new Scanner(System.in);  // Konsoldan veri almak için
+        System.out.println("Bir sayı deneyiniz : ");
         int input = scan.nextInt();
 
         int sumDivisors=0;  // Girilen sayının tam sayı bölenlerinin toplamını bulmak için değişken
@@ -28,5 +28,6 @@ public class PerfectNumber {
         }else{
             System.out.println(input+" mükemmel değil.");
         }
+        scan.close();
     }
 }
