@@ -1,4 +1,4 @@
-package week1.bodyMassIndex;
+package week1.bodymassindex;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package workingArea.tryingPage;
+package workingarea.tryingPage;
 import java.util.Scanner;
 
 public class WhilePassword {

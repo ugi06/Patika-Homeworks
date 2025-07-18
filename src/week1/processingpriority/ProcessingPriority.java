@@ -1,4 +1,4 @@
-package week1.processingPriority;
+package week1.processingpriority;
 import java.util.Scanner;
 public class ProcessingPriority {
     public static void main(String[] args) {

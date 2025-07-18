@@ -1,4 +1,4 @@
-package week1.leapYears;
+package week1.leapyears;
 import java.util.Scanner;
 public class LeapYears {
     public static void main(String[] args) {

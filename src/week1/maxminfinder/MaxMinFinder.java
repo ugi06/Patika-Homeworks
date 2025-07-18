@@ -1,4 +1,4 @@
-package week1.maxMinFinder;
+package week1.maxminfinder;
 import java.util.Scanner;
 
 public class MaxMinFinder {

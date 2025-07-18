@@ -1,4 +1,4 @@
-package week1.chineseZodiak;
+package week1.Chinesezodiak;
 
 import java.util.Scanner;
 

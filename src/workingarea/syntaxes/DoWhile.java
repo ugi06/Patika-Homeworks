@@ -1,4 +1,4 @@
-package workingArea.syntaxes;
+package workingarea.syntaxes;
 
 public class DoWhile {
     public static void main(String[] args) {
