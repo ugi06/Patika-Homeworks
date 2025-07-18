@@ -5,26 +5,30 @@ public class MaxMinFinder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Kaç sayı gireceksin:"); // kullanıcıdan veri alır.
+        // kullanıcıdan veri alır.
+        System.out.print("Kaç sayı gireceksin:");
         int input = scanner.nextInt();
 
-        int i = 0; // while döngüsü için sayaç.
+        // while döngüsü için sayaç.
+        int i = 0;
 
-        int[] setInputs = new int[input];// kullanıcının girdiği sayıları dizi haline getirir. Bu dizi sayesinde karşılaştırma yapabileceğiz.
+        // kullanıcının girdiği sayıları dizi haline getirir. Bu dizi sayesinde karşılaştırma yapabileceğiz.
+        int[] setInputs = new int[input];
 
-        while (i<input){ // kullanıcıdan istediği kadar sayı girmesini sağlayan while döngüsü
+        // kullanıcıdan istediği kadar sayı girmesini sağlayan while döngüsü
+        while (i<input){
             System.out.print( ( i + 1 ) + ". Sayıyı giriniz: ");
             int input1= scanner.nextInt();
             setInputs[i] = input1;
             i++;
         }
 
-        // max ve min değerlerini tutan değişkenler
+        // max ve min değerlerini tutacak olan değişkenler
         int max = setInputs[0];
         int min = setInputs[0];
 
-
-        for (int j = 1; j < input;) {// max ve min değerleri büyüklük küçüklük ilişkisi ile karşılaştıran for döngüsü
+        // max ve min değerleri büyüklük küçüklük ilişkisi ile karşılaştıran for döngüsü
+        for (int j = 1; j < input;) {
             boolean maxInput = max<setInputs[j];
             boolean minInput = min>setInputs[j];
             if(maxInput){
@@ -35,9 +39,8 @@ public class MaxMinFinder {
             j++;
         }
 
-        System.out.println("Maxsimum Sayı:"+max+"\n"+"Minimum Sayı : "+min);// ekrana yazdırır
-
+        // ekrana yazdırır
+        System.out.println("Maxsimum Sayı:"+max+"\n"+"Minimum Sayı : "+min);
         scanner.close();
-
     }
 }

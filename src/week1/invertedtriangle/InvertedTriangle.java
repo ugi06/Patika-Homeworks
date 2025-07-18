@@ -17,7 +17,7 @@ public class InvertedTriangle {
                 j++;
 
                 if(j==input){
-                    System.out.print("\n");        // Yan yana yazılan * ları üçgen halinde dizmek için alt satıra geçirir
+                    System.out.println();        // Yan yana yazılan * ları üçgen halinde dizmek için alt satıra geçirir
                 }
             }
         }
