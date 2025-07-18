@@ -1,4 +1,4 @@
-# Girilen N tane sayının içinde Maksimum ve Minimum Sayıları Bulan Algoritma
+# Girilen n tane sayının içinde Maksimum ve Minimum Sayıları Bulan Algoritma
 *  For ve While metotları kullanılarak yazıldı
 * Yorum satırları ile kod yorumlanmıştır.
 
