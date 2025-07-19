@@ -1,4 +1,4 @@
-package week1.matrixTranspose;
+package week1.matrixtranspose;
 
 import java.util.Scanner;
 
