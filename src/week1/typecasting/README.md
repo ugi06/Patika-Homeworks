@@ -18,4 +18,4 @@ You must do this manually.
 double x = 0.5;
 int y = (int) x;  // double → int (needs casting)
 ```
-In this code we have got castings which one from int to double and from double to int.
+In this code we have done conversions from int to double and double to int.
