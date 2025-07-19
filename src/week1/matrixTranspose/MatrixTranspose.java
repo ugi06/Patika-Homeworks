@@ -12,7 +12,7 @@ public class MatrixTranspose {
         System.out.print("Matrisiniz kaç sütun : ");
         int collum = scanner.nextInt();
 
-        double[][] inputArray = new double[row][collum];         // iki çeşit matrisimiz olduğu için iki tane 2 boyutlu dizi.
+        double[][] inputArray = new double[row][collum];         // iki çeşit matrisimiz olduğu için iki tane 2 boyutlu dizi tanımlar.
         double[][] arrayTranspose = new double[collum][row];
 
         for (int i = 0; i < row; i++) {
