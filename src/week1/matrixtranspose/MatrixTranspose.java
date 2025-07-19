@@ -38,12 +38,15 @@ public class MatrixTranspose {
             System.out.println();                                 // Her satırdan sonra satır atla.
         }
 
-        System.out.println("\nMatrisinizin Transpozu : ");        // Matriksin Transpozunun çıktısı için.
+        System.out.println("\nMatrisinizin Transpozu :  ");        // Matriksin Transpozunun çıktısı için.
         for (int i = 0; i < collum; i++) {
             for (int j = 0; j < row; j++) {
                 System.out.print(arrayTranspose[i][j] + "  ");
             }
             System.out.println();
         }
+
+    scanner.close();
+
     }
 }

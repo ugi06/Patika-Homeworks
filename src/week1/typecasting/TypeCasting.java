@@ -18,5 +18,9 @@ public class TypeCasting {
 
         System.out.println("Int tipindeki değişkeniniz double tipine dönüştürüldü: "+intToDouble);   // Ekrana yazdırır
         System.out.print("Double tipindeki değişkeniniz int tipine dönüştürüldü: "+doubleToInt);
+
+        scanner.close();
+
     }
+
 }
