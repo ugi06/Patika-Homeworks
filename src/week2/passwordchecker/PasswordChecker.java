@@ -1,0 +1,92 @@
+package week2.passwordchecker;
+
+import java.util.Scanner;
+
+public class PasswordChecker {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Kullanıcıdan parola oluşturması istenir
+        System.out.println("Uygun bir parola oluşturunuz : ");
+        String password = scanner.nextLine();
+
+        // Parola kontrolü için tanımlanmıştır tüm koşullarda geçerse true kalacaktır.
+        boolean check = true;
+
+        /* Bir if koşulunun değilini almak istiyorsak aşağıda göründüğü gibi !'i  kullanmalıyız.
+        /* Burda istenilen şartları yerine getiren metotlar if şartlarına sokuluyor ve olumsuz bir dönüşte uyarı cevabını yazdırıyor.
+        /* Eğer if koşulları iç içe yazılırsa hatalı parola girişinde sadece ilk hata mesajını döndürüp programı kapatırdı.
+        /* Fakat şartlar ayrı ayrı yazılırsa hepsini kontrol edip tüm hata mesajlarını döndürür.
+         */
+
+        if(!PasswordLength(password)){
+
+            System.out.println("Parola en az 8 karakterli olmalıdır!");
+            check = false;
+        }
+
+        if(!IsFirstStringUpperCase(password)){
+
+            System.out.println("Parolanızdaki ilk harf büyük değil !");
+            check = false;
+        }
+
+        if(!HaveNotSpace(password)){
+
+            System.out.println("Parolanızda boşluk olamaz !");
+            check = false;
+        }
+
+        if(!HaveLastCase(password)){
+
+            System.out.println("Parolanızın son karakteri ? olmalı !");
+            check = false;
+        }
+
+        // Tüm Şartlardan geçerse parolanız geçerli, geçmez ise Parolanız geçersizi yazdırıyor
+        if(check){
+            System.out.println("Parolanız geçerli !");
+        }else {
+            System.out.println("Parolanız geçersiz !");
+        }
+
+        scanner.close();
+
+    }
+
+   // Parola şartlarını kontrol eden statick boolean metotlar
+    static boolean PasswordLength(String password){
+
+        return password.length() >= 8;
+    }
+
+    static boolean IsFirstStringUpperCase(String password) {
+
+        for (int i = 0; i < password.length(); i++) {
+
+            if (Character.isLetter(password.charAt(i))) {
+
+                return Character.isUpperCase(password.charAt(i));
+            }
+        }return false;
+    }
+
+    static boolean HaveNotSpace (String password){
+
+        for (int i = 0; i <password.length(); i++) {
+
+            char c = password.charAt(i);
+
+            if(c ==' '){
+
+                return false;
+            }
+        } return true;
+    }
+
+    static boolean HaveLastCase(String password) {
+
+        return password.charAt(password.length() - 1) == '?';
+        }
+}
