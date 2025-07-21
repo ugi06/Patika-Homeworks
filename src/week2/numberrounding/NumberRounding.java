@@ -7,12 +7,14 @@ public class NumberRounding {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Bir ondalıklı sayı giriniz: ");
+        // Kullanıcıdan double tipinde bir veri girişi ister.
+        System.out.print("Bir ondalıklı sayı giriniz: ");
         double input = scanner.nextDouble();
+        // Üç dönüşümü yapar ve yazdırır.
+        System.out.print("Aşağı Yuvarlama: "+ Math.floor(input)
+                + "\n" +"Yukarı Yuvarlama: "+ Math.ceil(input)
+                + "\n" +"En Yakın Tam Sayı: "+ Math.round(input));
 
-        System.out.println("Aşağı Yuvarlama: "+ Math.floor(input));
-        System.out.println("Yukarı Yuvarlama: "+ Math.ceil(input));
-        System.out.println("En Yakın Tam Sayı: "+ Math.round(input));
-
+        scanner.close();
     }
 }
