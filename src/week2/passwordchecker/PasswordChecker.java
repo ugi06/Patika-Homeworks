@@ -32,7 +32,7 @@ public class PasswordChecker {
             check = false;
         }
 
-        if(!HaveNotSpace(password)){
+        if(!HaveSpace(password)){
 
             System.out.println("Parolanızda boşluk olamaz !");
             check = false;
@@ -72,7 +72,7 @@ public class PasswordChecker {
         }return false;
     }
 
-    static boolean HaveNotSpace (String password){
+    static boolean HaveSpace (String password){
 
         for (int i = 0; i <password.length(); i++) {
 
