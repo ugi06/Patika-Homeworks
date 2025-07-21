@@ -32,7 +32,7 @@ public class PasswordChecker {
             check = false;
         }
 
-        if(!HaveSpace(password)){
+        if(HaveSpace(password)){
 
             System.out.println("Parolanızda boşluk olamaz !");
             check = false;
@@ -73,16 +73,7 @@ public class PasswordChecker {
     }
 
     static boolean HaveSpace (String password){
-
-        for (int i = 0; i <password.length(); i++) {
-
-            char c = password.charAt(i);
-
-            if(c ==' '){
-
-                return false;
-            }
-        } return true;
+        return password.contains(" ");
     }
 
     static boolean HaveLastCase(String password) {
