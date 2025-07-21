@@ -10,6 +10,7 @@ public class NumberRounding {
         // Kullanıcıdan double tipinde bir veri girişi ister.
         System.out.print("Bir ondalıklı sayı giriniz: ");
         double input = scanner.nextDouble();
+
         // Üç dönüşümü yapar ve yazdırır.
         System.out.print("Aşağı Yuvarlama: "+ Math.floor(input)
                 + "\n" +"Yukarı Yuvarlama: "+ Math.ceil(input)
