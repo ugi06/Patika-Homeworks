@@ -20,25 +20,25 @@ public class PasswordChecker {
         /* Fakat şartlar ayrı ayrı yazılırsa hepsini kontrol edip tüm hata mesajlarını döndürür.
          */
 
-        if(!PasswordLength(password)){
+        if(!passwordLength(password)){
 
-            System.out.println("Parola en az 8 karakterli olmalıdır!");
+            System.out.println("Parola en az 8 karakteri olmalıdır!");
             check = false;
         }
 
-        if(!IsFirstStringUpperCase(password)){
+        if(!isFirstStringUpperCase(password)){
 
             System.out.println("Parolanızdaki ilk harf büyük değil !");
             check = false;
         }
 
-        if(HaveSpace(password)){
+        if(haveSpace(password)){
 
             System.out.println("Parolanızda boşluk olamaz !");
             check = false;
         }
 
-        if(!HaveLastCase(password)){
+        if(!haveLastCase(password)){
 
             System.out.println("Parolanızın son karakteri ? olmalı !");
             check = false;
@@ -56,12 +56,12 @@ public class PasswordChecker {
     }
 
    // Parola şartlarını kontrol eden statick boolean metotlar
-    static boolean PasswordLength(String password){
+    static boolean passwordLength(String password){
 
         return password.length() >= 8;
     }
 
-    static boolean IsFirstStringUpperCase(String password) {
+    static boolean isFirstStringUpperCase(String password) {
 
         for (int i = 0; i < password.length(); i++) {
 
@@ -72,11 +72,11 @@ public class PasswordChecker {
         }return false;
     }
 
-    static boolean HaveSpace (String password){
+    static boolean haveSpace (String password){
         return password.contains(" ");
     }
 
-    static boolean HaveLastCase(String password) {
+    static boolean haveLastCase(String password) {
 
         return password.charAt(password.length() - 1) == '?';
         }
