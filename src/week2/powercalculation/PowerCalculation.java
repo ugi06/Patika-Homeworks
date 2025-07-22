@@ -16,15 +16,9 @@ public class PowerCalculation {
         double inputPower = scanner.nextDouble();
 
         // işlemi main metotun dışındaki powerCalculation metotuna yollar ve return değerini döndürür.
-        System.out.print("Sonuç: " + powerCalculation(inputNumber,inputPower));
+        System.out.print("Sonuç: " + Math.pow(inputNumber,inputPower));
 
         scanner.close();
 
-    }
-
-    // static double metot tanımı.
-    static double powerCalculation(double number1 , double number2){
-
-        return Math.pow(number1,number2);
     }
 }
