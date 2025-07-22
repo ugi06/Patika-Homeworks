@@ -10,13 +10,13 @@ public class PowerCalculation {
 
         // Kullanıcıdan verileri ister.
         System.out.print("Kuvvetini alacağınız sayıyı giriniz : ");
-        double inputNumber= scanner.nextDouble();
+        double base= scanner.nextDouble();
 
         System.out.print("Sayınızın kuvvetini giriniz: ");
-        double inputPower = scanner.nextDouble();
+        double exponent = scanner.nextDouble();
 
         // işlemi main metotun dışındaki powerCalculation metotuna yollar ve return değerini döndürür.
-        System.out.print("Sonuç: " + Math.pow(inputNumber,inputPower));
+        System.out.print("Sonuç: " + Math.pow(base,exponent));
 
         scanner.close();
 
