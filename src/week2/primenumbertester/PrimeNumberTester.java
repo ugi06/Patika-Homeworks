@@ -21,6 +21,7 @@ public class PrimeNumberTester {
             System.out.println(input + " sayısı asal değildir. ");
         }
 
+        scanner.close();
 
     }
 
