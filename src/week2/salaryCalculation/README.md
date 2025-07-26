@@ -17,9 +17,15 @@ This project includes a Java class that calculates an employee's salary details.
 - Setter methods include validation. If an invalid value is given, an `IllegalArgumentException` is thrown.
 - Each time a value is updated, the related calculations are also updated.
 - The `toString()` method is overridden to print all employee details.
-- You can use the class `salarycalculation.java` to try it out. I left an example.
+- Uses an interface (`SalaryCalculation`) to define salary calculation logic
+- Calculates salary based on years of experience
 
-## Usage
+## Structure
+
+- `SalaryCalculation`: Interface with all calculation methods and constants
+- `Employee`: Class that holds employee data and implements the interface
+- `Main`: to run the code.
+
 ```java
 Employee ugur = new Employee("Uğur Taşdelen",5000,45,1998);
 System.out.println(ugur);
@@ -34,4 +40,4 @@ Maaş Artışı: 750.0
 Vergi ve Bonuslar ile birlikte maaş :5000.0
 Toplam Maaş: 5750.0
 ```
-###### You can use the class `salarycalculation.java` to try it out. I left an example.
+###### You can use the class `Main.java` to try it out. I left an example.
