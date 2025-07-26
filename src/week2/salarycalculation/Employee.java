@@ -1,4 +1,4 @@
-package week2.salarycalculation;
+package week2.salaryCalculation;
 
 
 public class Employee implements SalaryCalculation {
