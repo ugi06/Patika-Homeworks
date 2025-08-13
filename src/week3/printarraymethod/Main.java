@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Yazdırılacak 4 wrapper class arrayleri
+        // Yazdırılacak wrapper class arrayleri
 
         String[] elements = {"Sigarayı","acilen","bırakmalısın", "." , "Eğer","bırakmaszsan","................"};
 
