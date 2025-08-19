@@ -13,7 +13,7 @@ public class Main {
 
         // try catch for find exception
         try {
-            Day day = Day.valueOf(input);
+            Day day = Day.valueOf(input); //
             System.out.println(workingHours(day));
         } catch (IllegalArgumentException e) {
             System.out.println("Wrong try again!");
