@@ -8,14 +8,12 @@ public class Employee {
     // Employee's fields
     private final String name;
     private final String surname;
-    private final String jobTitle;
     private final ContactInfo contactInfo;
 
     //Employee's constructor
     public Employee(String name, String surname, String jobTitle,String eMail,String phoneNumber) {
         this.name = name;
         this.surname = surname;
-        this.jobTitle = jobTitle;
         this.contactInfo = new ContactInfo(eMail, phoneNumber);
     }
 
@@ -45,7 +43,6 @@ public class Employee {
     public String toString() {
         return "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", jobTitle='" + jobTitle + '\'' +
                 ", contactInfo=" + contactInfo;
     }
 
