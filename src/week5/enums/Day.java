@@ -2,7 +2,7 @@ package week5.enums;
 
 public enum Day {
 
-    // Constants of week
+    // Constants
     MONDAY,
     TUESDAY,
     WEDNESDAY,
