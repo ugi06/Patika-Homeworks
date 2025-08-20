@@ -18,7 +18,7 @@ public class Employee {
     }
 
     // Inner Class
-    static class ContactInfo{
+    static final class ContactInfo{
 
         //ContactInfo's fields
         private final String eMail;
@@ -50,8 +50,7 @@ public class Employee {
     public static void main(String[] args) {
 
         Employee employee1 = new Employee("Uğur","Taşdelen","Backend Developer","ugurtasdelen1234@gmail.com","5346904018");
-        System.out.println(employee1.contactInfo);
-
+        System.out.println(employee1);
 
     }
 }
