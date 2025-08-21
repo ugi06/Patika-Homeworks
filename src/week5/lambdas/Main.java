@@ -25,5 +25,16 @@ public class Main {
                 .forEach(System.out::println);
         ;
 
+        System.out.println("-----------------------");
+
+        // Lambda using with functional interface
+        EvenNum evenNum = s -> s*2;
+
+        for (int i = 0; i < 10; i++) {
+
+            System.out.println(evenNum.put(i));
+
+        }
+
     }
 }
