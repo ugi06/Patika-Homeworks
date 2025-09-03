@@ -31,14 +31,6 @@ FROM film
 
 -- Fourth
 
-SELECT customer_id, COUNT(*) AS payment_count
-FROM payment
+SELECT customer_id, COUNT (*) FROM payment
 GROUP BY customer_id
-HAVING COUNT(*) = (
-    SELECT MAX(customer_count)
-    FROM (
-        SELECT customer_id, COUNT(*) AS customer_count
-        FROM payment
-        GROUP BY customer_id
-    )
-);
+ORDER BY COUNT (*) DESC;
